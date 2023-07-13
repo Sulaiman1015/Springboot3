@@ -11,8 +11,8 @@
     <groupId>com.example</groupId>
     <artifactId>springboo-logging</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>logging</name>
-    <description>logging</description>
+    <name>springboot-logging</name>
+    <description>springboot-logging</description>
     <properties>
         <java.version>20</java.version>
     </properties>
