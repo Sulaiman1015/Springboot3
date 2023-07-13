@@ -5,8 +5,8 @@
       <list>
         <option value="$PROJECT_DIR$/logging/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-02-web/pom.xml" />
-        <option value="$PROJECT_DIR$/springboot-web/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-logging/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-web/pom.xml" />
       </list>
     </option>
   </component>
