@@ -1,5 +1,8 @@
 package com.sm.web.controller;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.dataformat.yaml.YAMLFactory;
 import com.sm.web.bean.Person;
 import jakarta.servlet.http.HttpServletRequest;
 import lombok.extern.slf4j.Slf4j;
@@ -20,7 +23,8 @@ public class HelloController {
     //return json data by default using jackson in springboot
     //jackson support too xml, for return xml, use dependency jackson-dateformat-xml
     @GetMapping("/person")
-    public Person person(){
-        return new Person(1,"tim",23,"man");
+    public Person person() throws JsonProcessingException {
+        return new Person(1, "tim", 23, "man");
+
     }
 }
