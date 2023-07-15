@@ -35,9 +35,10 @@ public class ThymeleafController {
     @GetMapping("/list")
     public List<Person> getList(Model model){
         List<Person> list = Arrays.asList(
-                new Person(1,"Tom",23,"Male","admin"),
+                new Person(1,"Tom",21,"Male","admin"),
                 new Person(2,"Tim",24,"Male","emp"),
-                new Person(3,"Tam",25,"Female","hr")
+                new Person(3,"Tam",25,"Female","hr"),
+                new Person(4,"Tem",20,"Female","emp")
         );
         model.addAttribute("persons",list);
         return list;
