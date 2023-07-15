@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="http://thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Thymeleaf</title>
 </head>
 <body>
 <h2>
-   <p>Hi <span th:text="${msg}"></span></p>
+   <p>Hi <span th:text="${#strings.toUpperCase(msg)}"></span></p>
 </h2>
 <br>
 <h2>
@@ -32,5 +32,11 @@
     <p>Sex <span th:text="*{sex}"></span></p>
 </h2>
 
+<!--
+${}: get dynamic value from model
+@{}: get path url
+*{}: use with th:object="${}" to get variable value
+param: by example ${param.name}
+-->
 </body>
 </html>

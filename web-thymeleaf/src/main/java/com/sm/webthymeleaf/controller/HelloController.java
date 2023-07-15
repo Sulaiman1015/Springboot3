@@ -24,7 +24,7 @@ public class HelloController {
     //jackson support too xml, for return xml, use dependency jackson-dateformat-xml
     @GetMapping("/person")
     public Person person() throws JsonProcessingException {
-        return new Person(1, "tim", 23, "man","admin");
+        return new Person(1, "tim", 23, "man");
 
     }
 }
