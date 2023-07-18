@@ -1,1 +1,8 @@
-{ "properties": [ ] }
+{
+  "properties": [
+    {
+      "name": "spring.datasource.hikari.type",
+      "type": "java.lang.String",
+      "description": "Description for spring.datasource.hikari.type."
+  }
+] }
