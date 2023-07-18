@@ -19,9 +19,10 @@
     <tbody>
     <tr th:each="person:${persons}">
         <th scope="row" th:text="${person.id}">1</th>
-        <td th:text="${person.name}">Mark</td>
+        <td  th:if="${#strings.isEmpty(person.name)}" th:text="Empty">Mark</td>
+        <td  th:if="${not #strings.isEmpty(person.name)}" th:text="${person.name}">Mark</td>
         <td th:text="| ${person.age} / ${person.age>21?'':'Young'} |">22</td>
-        <td>[[${person.sex}]]</td>
+        <td >[[${person.sex}]]</td>
         <td th:switch="${person.role}">
             <button th:case="'admin'" type="button" class="btn btn-danger">Super Admin</button>
             <button th:case="'emp'" type="button" class="btn btn-primary">Normal User</button>
